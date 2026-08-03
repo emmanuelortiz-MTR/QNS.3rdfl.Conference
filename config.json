@@ -38,19 +38,19 @@
           "instruction": "At your own pace, turn the TV on",
           "image": "3rdFl.MainTV.ON.JPG",
           "alt": "Pic showing the Main TV On"
-        }
+        },
         {
           "instruction": "Now, let's locate our keyboard and mouse. They normally exist on the same shared table in the middle of the room:",
           "image": "3rdFl.Keyboard.Mouse.JPG",
           "alt": "Pic of the Keyboard and Mouse for the 3rd Fl Conference room"
-        }
+        },
         {
           "instruction": "Make sure both devices are on!",
           "image": "3rdFl.MainKeyboard.ON.JPG",
           "alt": "Pic showing the switch for Keyboard"
           "image": "3rdFl.MainMouseON.JPG",
           "alt": "Pic showing the switch for Mouse"
-        }
+        },
         {
           "instruction": "Try moving the mouse around or click on keys on the keyboard. Now click on 'Other User' on the bottom left and sign into your profile!",
           "image": "3rdFl.MainTV.Finish.JPG",

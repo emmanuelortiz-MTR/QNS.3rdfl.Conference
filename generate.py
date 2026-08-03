@@ -51,7 +51,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projector Guide</title>
+    <title>3rd Fl QNS Shared Space Guide</title>
     <style>
         body {{ font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 0 1rem; }}
         .button {{ display: inline-block; padding: 1rem 2rem; margin: 1rem 0; background: #007bff; color: white; text-decoration: none; border-radius: 8px; }}
@@ -62,7 +62,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <h1>So you want to operate the Auditorium Main Projector?</h1>
+    <h1>So you want to operate the 3rd Fl Conference Room?</h1>
     {options_html}
 </body>
 </html>

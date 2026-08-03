@@ -2,42 +2,59 @@
   "options": [
     {
       "id": "start",
-      "title": "Locate the Panel for the Auditorium Projector",
+      "title": "Locate the Main Console for the 3rd Floor Conference room",
       "steps": [
         {
-          "instruction": "You can find the control panel behind the reception desk in one of the closets.",
-          "video_url": "https://drive.google.com/file/d/1O_q7QW_XpX8RuvZSOFkSyLfQ-sMHunj_/view?usp=sharing",
-          "alt": "Video showing where the control panel is"
+          "instruction": "You can find the main console atop the center table. Looks something like this:",
+          "image": "3rdfl.MainConsole.JPG",
+          "alt": "Main Console Unit"
         },
         {
-          "instruction": "Let's start from scratch, make sure the system is off",
-          "image": "Panel.Off.Switch.JPG",
-          "alt": "Panel Off Switch location"
+          "instruction": "Let's start from scratch, try to reset the console to start from the home screen",
+          "video_url": "https://drive.google.com/file/d/1jymjsIeu7fXVOBk7Qbj5rCuKJkXFZxGu/view?usp=sharing",
+          "alt": "Video showing how to exit out of device mode and return to HOME"
         },
         {
-          "instruction": "On this next screen, confirm that the system is off.",
-          "image": "Panel.Off.Switch.CONFIRM.JPG",
-          "alt": "Panel Off Switch Confirmation"
+          "instruction": "Next, let's activate 'Device Mode'",
+          "image": "3rdfl.Main.DeviceMode.JPG",
+          "alt": "Shows the button for Device Mode on the Main Console"
         },
         {
-          "instruction": "Now, let's pull the Auditorium scrim down. Select the 'Wall Plate' option from the screen on the panel.",
-          "image": "Panel.Wallplate.JPG",
-          "alt": "Panel Wallplate Button Location"
+          "instruction": "If done succefully, your Main Console panel should look like this:",
+          "image": "3rdfl.Main.DeviceModeOn.JPG",
+          "alt": "What the Main Console looks like after activating Device Mode"
         },
         {
-          "instruction": "Voila! The scrim should now begin coming down in the Auditorium.",
-          "video_url": "https://drive.google.com/file/d/1RRPvPFicNgeJ5kug4vsSM27T6lO8QQWB/view?usp=sharing",
-          "alt": "Video showing the scrim coming down"
+          "instruction": "Now, let's turn our attention to the Main TV",
+          "image": "3rdfl.MainTV.JPG",
+          "alt": "Picture showing the main TV off"
         },
         {
-          "instruction": "Now to control the computer connected, you must find the Auditorium Keyboard.",
-          "image": "Auditorium.keyboard.JPG",
-          "alt": "Auditorium Keyboard Pic"
+          "instruction": "Is the TV on? If not, try to locate the remote to turn it on! The remote should something like this:",
+          "image": "3rdfl.MainTV.Remote.JPG",
+          "alt": "Picture of the Samsung TV remote for TV"
         },
         {
-          "instruction": "Typically, the keyboard floats around the kitchen area of the second floor. Look for it somewhere in the following area.",
-          "image": "Auditorium.keyboard.location.JPG",
-          "alt": "Auditorium Keyboard Location"
+          "instruction": "At your own pace, turn the TV on",
+          "image": "3rdFl.MainTV.ON.JPG",
+          "alt": "Pic showing the Main TV On"
+        }
+        {
+          "instruction": "Now, let's locate our keyboard and mouse. They normally exist on the same shared table in the middle of the room:",
+          "image": "3rdFl.Keyboard.Mouse.JPG",
+          "alt": "Pic of the Keyboard and Mouse for the 3rd Fl Conference room"
+        }
+        {
+          "instruction": "Make sure both devices are on!",
+          "image": "3rdFl.MainKeyboard.ON.JPG",
+          "alt": "Pic showing the switch for Keyboard"
+          "image": "3rdFl.MainMouseON.JPG",
+          "alt": "Pic showing the switch for Mouse"
+        }
+        {
+          "instruction": "Try moving the mouse around or click on keys on the keyboard. Now click on 'Other User' on the bottom left and sign into your profile!",
+          "image": "3rdFl.MainTV.Finish.JPG",
+          "alt": "Pic displaying the 'Other Users' log in screen on the Main TV"
         }
       ]
     }

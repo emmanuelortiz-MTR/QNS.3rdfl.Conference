@@ -59,6 +59,11 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
         iframe {{ width: 100%; height: 340px; border: none; }}
         .nav {{ margin-top: 2rem; }}
         .nav a {{ margin-right: 1rem; }}
+        .image-grid {{ display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }}
+        .image-grid img {{ max-width: 45%; height: auto; border: 1px solid #ddd; border-radius: 8px; }}
+        @media (max-width: 600px) {{
+            .image-grid img {{ max-width: 100%; }}
+        }}
     </style>
 </head>
 <body>
@@ -81,6 +86,11 @@ STEP_TEMPLATE = """<!DOCTYPE html>
         iframe {{ width: 100%; height: 340px; border: none; }}
         .nav {{ margin-top: 2rem; }}
         .nav a {{ margin-right: 1rem; }}
+        .image-grid {{ display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }}
+        .image-grid img {{ max-width: 45%; height: auto; border: 1px solid #ddd; border-radius: 8px; }}
+        @media (max-width: 600px) {{
+            .image-grid img {{ max-width: 100%; }}
+        }}
     </style>
 </head>
 <body>
@@ -116,6 +126,33 @@ CONGRATS_TEMPLATE = """<!DOCTYPE html>
 </html>
 """
 
+# ---------- Helper function to generate media HTML ----------
+def generate_media_html(step):
+    """Generate HTML for media (video, single image, or multiple images)"""
+    # Check for video_url first
+    if "video_url" in step:
+        embed_url = google_drive_embed(step["video_url"])
+        return f'<iframe src="{embed_url}" allow="autoplay; encrypted-media" allowfullscreen title="{step.get("alt", "Video")}"></iframe>'
+    
+    # Check for video file
+    if "video" in step:
+        return f'<video controls alt="{step.get("alt", "")}"><source src="static/videos/{step["video"]}" type="video/mp4">Your browser does not support the video tag.</video>'
+    
+    # Check for multiple images (NEW)
+    if "images" in step:
+        images_html = '<div class="image-grid">'
+        for img in step["images"]:
+            images_html += f'<img src="static/images/{img["src"]}" alt="{img.get("alt", "")}">'
+        images_html += '</div>'
+        return images_html
+    
+    # Check for single image
+    if "image" in step:
+        return f'<img src="static/images/{step["image"]}" alt="{step.get("alt", "")}">'
+    
+    # No media
+    return ""
+
 # ---------- Generate index page ----------
 options_html = ""
 for opt in config.get("options", []):
@@ -133,16 +170,8 @@ for opt in config.get("options", []):
         print(f"⚠️  Warning: No steps for option '{opt.get('id')}'")
 
     for i, step in enumerate(steps, start=1):
-        # Determine media HTML
-        if "video_url" in step:
-            embed_url = google_drive_embed(step["video_url"])
-            media = f'<iframe src="{embed_url}" allow="autoplay; encrypted-media" allowfullscreen title="{step.get("alt", "Video")}"></iframe>'
-        elif "video" in step:
-            media = f'<video controls alt="{step.get("alt", "")}"><source src="static/videos/{step["video"]}" type="video/mp4">Your browser does not support the video tag.</video>'
-        elif "image" in step:
-            media = f'<img src="static/images/{step["image"]}" alt="{step.get("alt", "")}">'
-        else:
-            media = ""  # no media
+        # Generate media HTML using the helper function
+        media = generate_media_html(step)
 
         # Navigation links
         prev_link = f'<a href="{opt["id"]}_step{i-1}.html" class="button">⬅ Previous</a>' if i > 1 else ""

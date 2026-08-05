@@ -38,7 +38,7 @@
           "instruction": "At your own pace, turn the TV on",
           "image": "3rdFl.MainTV.ON.JPG",
           "alt": "Pic showing the Main TV On"
-        },  // ✅ Added comma here
+        },
         {
           "instruction": "Now, let's locate our keyboard and mouse. They normally exist on the same shared table in the middle of the room:",
           "image": "3rdFl.Keyboard.Mouse.JPG",
@@ -48,11 +48,11 @@
           "instruction": "Make sure both devices are on!",
           "images": [
             {
-              "image": "3rdFl.MainKeyboard.ON.JPG",
+              "src": "3rdFl.MainKeyboard.ON.JPG",
               "alt": "Pic showing the switch for Keyboard"
             },
             {
-              "image": "3rdFl.MainMouseON.JPG",
+              "src": "3rdFl.MainMouseON.JPG",
               "alt": "Pic showing the switch for Mouse"
             }
           ]

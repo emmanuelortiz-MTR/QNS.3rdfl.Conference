@@ -103,7 +103,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <button class="lang-toggle" onclick="toggleLanguage()">🇪🇸 Español</button>
+    <button class="lang-toggle" onclick="toggleLanguage()">🇨🇴 Español</button>
     <h1>
         <span class="lang-en active">So you want to operate the 3rd Fl Conference Room?</span>
         <span class="lang-es">¿Quieres operar la sala de conferencias del 3er piso?</span>
@@ -121,7 +121,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                 toggleBtn.textContent = '🇺🇸 English';
             }} else {{
                 currentLang = 'en';
-                toggleBtn.textContent = '🇪🇸 Español';
+                toggleBtn.textContent = '🇨🇴 Español';
             }}
             updateLanguage(currentLang);
         }}
@@ -204,7 +204,7 @@ STEP_TEMPLATE = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <button class="lang-toggle" onclick="toggleLanguage()">🇪🇸 Español</button>
+    <button class="lang-toggle" onclick="toggleLanguage()">🇨🇴 Español</button>
     <h1>
         <span class="lang-en active">{option_title_en}</span>
         <span class="lang-es">{option_title_es}</span>
@@ -231,7 +231,7 @@ STEP_TEMPLATE = """<!DOCTYPE html>
                 toggleBtn.textContent = '🇺🇸 English';
             }} else {{
                 currentLang = 'en';
-                toggleBtn.textContent = '🇪🇸 Español';
+                toggleBtn.textContent = '🇨🇴 Español';
             }}
             updateLanguage(currentLang);
         }}
@@ -298,7 +298,7 @@ CONGRATS_TEMPLATE = """<!DOCTYPE html>
     </style>
 </head>
 <body>
-    <button class="lang-toggle" onclick="toggleLanguage()">🇪🇸 Español</button>
+    <button class="lang-toggle" onclick="toggleLanguage()">🇨🇴 Español</button>
     <h1>
         <span class="lang-en active">🎉 Good job! 🎉</span>
         <span class="lang-es">🎉 ¡Buen trabajo! 🎉</span>
@@ -321,7 +321,7 @@ CONGRATS_TEMPLATE = """<!DOCTYPE html>
                 toggleBtn.textContent = '🇺🇸 English';
             }} else {{
                 currentLang = 'en';
-                toggleBtn.textContent = '🇪🇸 Español';
+                toggleBtn.textContent = '🇨🇴 Español';
             }}
             updateLanguage(currentLang);
         }}

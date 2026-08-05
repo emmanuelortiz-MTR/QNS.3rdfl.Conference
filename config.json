@@ -38,7 +38,7 @@
           "instruction": "At your own pace, turn the TV on",
           "image": "3rdFl.MainTV.ON.JPG",
           "alt": "Pic showing the Main TV On"
-        },
+        }
         {
           "instruction": "Now, let's locate our keyboard and mouse. They normally exist on the same shared table in the middle of the room:",
           "image": "3rdFl.Keyboard.Mouse.JPG",
